@@ -1,5 +1,6 @@
 [WorkState_v1-Edit.Breakpoints]
-Break0=TypeFile, main.c, 65, 0, 0, 1,
+Break0=TypeFile, osa\main.c, 33, 0, 0, 1,
+Break1=TypeFile, osa\stm8s_it.c, 491, 0, 0, 1,
 
 [WorkState_v1_2]
 ptn_Child1=DockState
@@ -46,7 +47,7 @@ ptn_Child33=Bar-32
 
 [WorkState_v1_2.DockState.Bar-0]
 BarID=59419
-Bars=47
+Bars=50
 Bar#0=0
 Bar#1=59647
 Bar#2=0
@@ -94,6 +95,9 @@ Bar#43=0
 Bar#44=0
 Bar#45=0
 Bar#46=0
+Bar#47=0
+Bar#48=0
+Bar#49=0
 Style=0
 ExStyle=0
 PrevFloating=False
@@ -356,7 +360,7 @@ ResourceID=0
 
 [WorkState_v1_2.DockState.Bar-8]
 BarID=59647
-MRUWidth=412
+MRUWidth=292
 Docking=True
 MRUDockID=59419
 MRUDockLeftPos=8
@@ -374,12 +378,12 @@ AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
 PctWidth=1000000
-MRUFloatCX=429
-MRUFloatCY=27
+MRUFloatCX=309
+MRUFloatCY=50
 MRUHorzDockCX=1366
 MRUHorzDockCY=29
-MRUVertDockCX=72
-MRUVertDockCY=527
+MRUVertDockCX=118
+MRUVertDockCY=423
 MRUDockingState=0
 DockingStyle=61440
 TypeID=14947
@@ -576,7 +580,7 @@ MRUFloatCY=30
 MRUHorzDockCX=402
 MRUHorzDockCY=30
 MRUVertDockCX=31
-MRUVertDockCY=372
+MRUVertDockCY=387
 MRUDockingState=0
 DockingStyle=61440
 TypeID=14946
@@ -1269,7 +1273,7 @@ ptn_Child2=ChildFrames
 
 [WorkState_v1_2.Frames.MainFrame]
 WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPHLAAAAAAEHAAAAAAEGEAAAAADBDAAAAA
-Title=ST Visual Develop - STM8WorkSpace.stw - [main.c]
+Title=ST Visual Develop - STM8WorkSpace.stw* - [main.c]
 
 [WorkState_v1_2.Frames.ChildFrames]
 ptn_Child1=Document-0
@@ -1281,33 +1285,17 @@ ptn_Child6=Document-5
 ptn_Child7=Document-6
 ptn_Child8=Document-7
 ptn_Child9=Document-8
+ptn_Child10=Document-9
+ptn_Child11=Document-10
+ptn_Child12=Document-11
+ptn_Child13=Document-12
+ptn_Child14=Document-13
+ptn_Child15=Document-14
 
 [WorkState_v1_2.Frames.ChildFrames.Document-0]
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-0.ViewFrame-0]
-DocPathName=main.c
-DocumentString=
-DocTemplateIndex=0
-WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPKBAAAAAAKBAAAAAAONDAAAAAHDBAAAAA
-IsActiveChildFrame=True
-IsFrameVisible=True
-
-[WorkState_v1_2.Frames.ChildFrames.Document-1]
-ptn_Child1=ViewFrame-0
-
-[WorkState_v1_2.Frames.ChildFrames.Document-1.ViewFrame-0]
-DocPathName=stm8s_it.c
-DocumentString=
-DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPCIAAAAAACIAAAAAAADEAAAAAJIBAAAAA
-IsActiveChildFrame=False
-IsFrameVisible=True
-
-[WorkState_v1_2.Frames.ChildFrames.Document-2]
-ptn_Child1=ViewFrame-0
-
-[WorkState_v1_2.Frames.ChildFrames.Document-2.ViewFrame-0]
 DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\inc\stm8s.h
 DocumentString=
 DocTemplateIndex=0
@@ -1315,21 +1303,10 @@ WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPEDAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
-[WorkState_v1_2.Frames.ChildFrames.Document-3]
+[WorkState_v1_2.Frames.ChildFrames.Document-1]
 ptn_Child1=ViewFrame-0
 
-[WorkState_v1_2.Frames.ChildFrames.Document-3.ViewFrame-0]
-DocPathName=stm8s_it.h
-DocumentString=
-DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPOEAAAAAAOEAAAAAAMPDAAAAAFFBAAAAA
-IsActiveChildFrame=False
-IsFrameVisible=True
-
-[WorkState_v1_2.Frames.ChildFrames.Document-4]
-ptn_Child1=ViewFrame-0
-
-[WorkState_v1_2.Frames.ChildFrames.Document-4.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-1.ViewFrame-0]
 DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\src\stm8s_awu.c
 DocumentString=
 DocTemplateIndex=0
@@ -1337,10 +1314,10 @@ WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPAAAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
-[WorkState_v1_2.Frames.ChildFrames.Document-5]
+[WorkState_v1_2.Frames.ChildFrames.Document-2]
 ptn_Child1=ViewFrame-0
 
-[WorkState_v1_2.Frames.ChildFrames.Document-5.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-2.ViewFrame-0]
 DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\src\stm8s_clk.c
 DocumentString=
 DocTemplateIndex=0
@@ -1348,10 +1325,10 @@ WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPKBAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
-[WorkState_v1_2.Frames.ChildFrames.Document-6]
+[WorkState_v1_2.Frames.ChildFrames.Document-3]
 ptn_Child1=ViewFrame-0
 
-[WorkState_v1_2.Frames.ChildFrames.Document-6.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-3.ViewFrame-0]
 DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\src\stm8s_rst.c
 DocumentString=
 DocTemplateIndex=0
@@ -1359,10 +1336,10 @@ WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPEDAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
-[WorkState_v1_2.Frames.ChildFrames.Document-7]
+[WorkState_v1_2.Frames.ChildFrames.Document-4]
 ptn_Child1=ViewFrame-0
 
-[WorkState_v1_2.Frames.ChildFrames.Document-7.ViewFrame-0]
+[WorkState_v1_2.Frames.ChildFrames.Document-4.ViewFrame-0]
 DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\src\stm8s_wwdg.c
 DocumentString=
 DocTemplateIndex=0
@@ -1370,13 +1347,112 @@ WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPOEAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
+[WorkState_v1_2.Frames.ChildFrames.Document-5]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-5.ViewFrame-0]
+DocPathName=osa\main.c
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPEDAAAAAAEDAAAAAAMPDAAAAAFEBAAAAA
+IsActiveChildFrame=True
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-6]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-6.ViewFrame-0]
+DocPathName=gpio\main.c
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPOEAAAAAAOEAAAAAAGBEAAAAAPFBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-7]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-7.ViewFrame-0]
+DocPathName=osa\debug\osa.lkf
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPIGAAAAAAIGAAAAAAADEAAAAAJHBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
 [WorkState_v1_2.Frames.ChildFrames.Document-8]
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-8.ViewFrame-0]
-DocPathName=stm8_interrupt_vector.c
+DocPathName=osa\stm8s_it.c
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPAAAAAAAAAAAAAAAAIMDAAAAABBBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-9]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-9.ViewFrame-0]
+DocPathName=osaos\osa.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPEDAAAAAAEDAAAAAAMPDAAAAAFEBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-10]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-10.ViewFrame-0]
+DocPathName=osa\osacfg.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPOEAAAAAAOEAAAAAAGBEAAAAAPFBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-11]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-11.ViewFrame-0]
+DocPathName=osaos\kernel\timers\osa_timer.h
 DocumentString=
 DocTemplateIndex=0
 WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPIGAAAAAAIGAAAAAAADEAAAAAJHBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-12]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-12.ViewFrame-0]
+DocPathName=osa\stm8s_it.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPAAAAAAAAAAAAAAAAIMDAAAAABBBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-13]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-13.ViewFrame-0]
+DocPathName=osaos\kernel\timers\osa_ttimer.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPKBAAAAAAKBAAAAAACODAAAAALCBAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-14]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-14.ViewFrame-0]
+DocPathName=en.stsw-stm8069\stm8s_stdperiph_lib\libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPBOPPPPPPOEAAAAAAOEAAAAAADGDAAAAAFFBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
