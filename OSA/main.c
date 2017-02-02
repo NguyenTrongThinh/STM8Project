@@ -1,10 +1,14 @@
 
 #include "stm8s.h"
 #include "osa.h"
+#include "ic74hc595.h"
 
 #define LED_GPIO_PORT  GPIOD
 #define LED_GPIO_PINS  GPIO_PIN_3
 #define TIM4_PERIOD       124
+
+#define LED_TASK_PRIORITY												0
+#define HC595_TASK_PRIORITY											1
 
 __IO uint32_t TimingDelay = 0;
 
@@ -13,15 +17,17 @@ void TimingDelay_Decrement(void);
 void CLK_Config(void);
 void TIM4_Config(void);
 void LED_TASK(void);
-
+void HC595_TASK(void);
 
 void main(void)
 {
 	CLK_Config();
-  GPIO_Init(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS, GPIO_MODE_OUT_PP_LOW_FAST);
+	GPIO_Init(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS, GPIO_MODE_OUT_PP_LOW_FAST);
+	HC595Init();
 	TIM4_Config();
-  OS_Init();
-	OS_Task_Create(0, LED_TASK);
+	OS_Init();
+	OS_Task_Create(LED_TASK_PRIORITY, LED_TASK);
+	OS_Task_Create(HC595_TASK_PRIORITY, HC595_TASK);
 	OS_EI();
 	OS_Run();
 
@@ -31,8 +37,22 @@ void LED_TASK(void)
 	while (1)
   {
     GPIO_WriteReverse(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS);
-    OS_Delay(500);
+    OS_Delay(100);
+	GPIO_WriteReverse(LED_GPIO_PORT, (GPIO_Pin_TypeDef)LED_GPIO_PINS);
+	OS_Delay(500);
   }
+}
+void HC595_TASK(void)
+{
+	static char num = 0;
+	while(1)
+	{
+		HC595WriteByte(num++);
+		HC595LockData();
+		if (num >= 10)
+			num = 0;
+		OS_Delay(200);
+	}
 }
 void Delay(__IO uint32_t nTime)
 {

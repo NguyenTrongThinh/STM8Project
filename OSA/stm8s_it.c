@@ -487,7 +487,7 @@ INTERRUPT_HANDLER(TIM6_UPD_OVF_TRG_IRQHandler, 23)
   */
  INTERRUPT_HANDLER(TIM4_UPD_OVF_IRQHandler, 23)
  {
-		//TimingDelay_Decrement();
+		TimingDelay_Decrement();
 		OS_Timer();
 		TIM4_ClearITPendingBit(TIM4_IT_UPDATE);
 	
